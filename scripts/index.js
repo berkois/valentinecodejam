@@ -54,7 +54,7 @@ passwordForm.addEventListener("submit", (evt) => {
     showGoButton();
   } else {
     showInputError(passwordForm, passwordInput, { inputErrorClass: "welcome__input_state_error", errorClass: "welcome__input-error_active" });
-    alert("Your love made you confused... Try again.");
+    alert("You're too emotional... Try again.");
   }
 });
 
