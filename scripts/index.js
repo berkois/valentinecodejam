@@ -22,7 +22,8 @@ const showGoButton = () => {
 };
 
 const showWelcomeMessage = (givenNumber) => {
-  welcomeMessage.textContent = `The message will be sent to ${givenNumber}.are you good to go?`;
+  welcomeMessage.textContent = `The message will be sent to ${givenNumber}.
+  are you good to go?`;
   welcomeMessage.classList.add("welcome__message_active");
 };
 

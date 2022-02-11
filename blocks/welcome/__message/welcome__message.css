@@ -1,6 +1,7 @@
 .welcome__message {
   margin: 0 auto;
   width: calc(100% - 30px);
+  max-width: 900px;
   color: #ffffff;
   font-size: 50px;
   font-weight: 300;
