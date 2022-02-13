@@ -1,5 +1,5 @@
 
-const dates = [
+export const dates = [
 {number:0, imgUrl:"./example", name:"Go for a long walk", moreInfo:""},
 {number:1, imgUrl:"./example", name:"Picnic at the park", moreInfo:""},
 {number:2, imgUrl:"./example", name:"Nature hike", moreInfo:""},
