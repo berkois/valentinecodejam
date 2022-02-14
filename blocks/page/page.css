@@ -1,0 +1,8 @@
+.page {
+  margin: 0;
+  background-image: url(../../images/backgroung.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+}
