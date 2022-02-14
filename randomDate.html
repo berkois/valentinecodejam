@@ -4,44 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @keyframes animatename{
-  0%{
-    transform: translateY(0px);
-  }
-  100%{
-    transform: translateY(-1625px);
-  }
-}
-.ann{
-  animation: animatename 2s linear infinite;
-}
-.slottt-machine-recipe {
-  margin: 0px auto;
-  width: 700px;
-  margin-top: 50px;
-}
+    <link rel="stylesheet" href="./pages/randomDate.css">
 
-.slottt-machine-recipe__mask {
-    width: 100%;
-    height: 150px;
-    overflow: hidden; 
-    position: relative;
-    display: inline-block;
-    margin-bottom: -40px;
-}
+  <style>
 
-.slottt-machine-recipe__items_container {
-    position: absolute;
-}
 
-.slottt-machine-recipe__item {
-    min-height: 150px;
-    max-height: 150px;
-    margin: 0px;
-    padding: 0px;
-    background-size: contain;
-}
 
 /* Typography */
 
@@ -64,16 +31,17 @@ a {
  text-decoration: none;
  color: #33CCFF;
 }
-    </style>
+</style>
     <title>Document</title>
 </head>
 <body>
-    <div class="slottt-machine-recipe">
-        <div class="slottt-machine-recipe__mask" id="wordbox">
-            <div class="slottt-machine-recipe__items_container recipe_if ann">
+    <div class="dates">
+        <div class="dates__mask" id="wordbox">
+            <div class="dates__items-container rotate">
             </div>
         </div>
     </div>
+    <button onclick="startNewInterval()">start</button>
     <button onclick="stopInterval()">Stop</button>
     <script src="randomDate.js"></script>
 </body>
