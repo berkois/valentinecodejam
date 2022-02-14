@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Avi Dalal, Israel Berko, David Kaplan" />
     <link rel="stylesheet" href="./pages/index.css" />
-
+    <link rel="icon" href="./images/favicon.ico" />
     <title>Valentine Dating Ideas Board</title>
   </head>
   <body class="page">
-    <h1 class="Heading">Valentine Dating Ideas Board</h1>
+    <header class="header">
+      <img class="logo" src="./images/logo_valentine.png" />
+    </header>
     <main>
-      <section class="spinner">
-        <button class="spinner__button">Raffle my Date Idea</button>
+      <section class="welcome">
+        <h1 class="welcome__message">Date idea picker</h1>
+        <p class="welcome__description">Want to enhance your Valentine day with your love by new date ideas?</p>
+        <p class="welcome__description">Raffle the below spin to get random idea!</p>
+        <img class="welcome__image" src="./images/date_welcome.png" />
       </section>
-
+      <section class="spinner">
+        <button class="button spinner__button">Raffle my Date Idea</button>
+      </section>
       <section class="dates">
         <ul class="dates__list">
           <li></li>
         </ul>
       </section>
     </main>
-    <footer class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perferendis obcaecati dolore blanditiis incidunt iste! Laboriosam blanditiis commodi veniam deleniti hic ullam officiis ex quisquam temporibus, repellendus maiores aliquid repellat.</footer>
-
+    <footer class="footer">copyright Avi Dalal, David Kaplan, Israel Berko, 2022</footer>
     <template id="date-template">
       <li class="dates__date">
         <img src=" " alt=" " class="dates__image" />
