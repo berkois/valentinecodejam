@@ -1,0 +1,38 @@
+.welcome__input-error {
+  font-size: 17px;
+  line-height: 1.2;
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: calc(100%);
+  left: 15px;
+  opacity: 0;
+}
+
+.welcome__input-error_active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .welcome__input-error {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .welcome__input-error {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome__input-error {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome__input-error {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/randomDate.css">
+
+  <style>
+
+
+
+/* Typography */
+
+body {
+  font-family: Helvetica, Arial, sans serif;
+}
+
+.recipe_if, .recipe_then {
+    font-weight: bold;
+    font-size: 120px;
+}
+
+.tagline {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+a {
+ font-weight: bold;
+ text-decoration: none;
+ color: #33CCFF;
+}
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="dates">
+        <div class="dates__mask" id="wordbox">
+            <div class="dates__items-container rotate">
+            </div>
+        </div>
+    </div>
+    <button onclick="startNewInterval()">start</button>
+    <button onclick="stopInterval()">Stop</button>
+    <script src="./js/randomDate.js"></script>
+</body>
+</html>

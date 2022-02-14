@@ -1,0 +1,11 @@
+@keyframes animatename{
+    0%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-1625px);
+    }
+  }
+  .rotate{
+    animation: animatename 2s linear infinite;
+  }

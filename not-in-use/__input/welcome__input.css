@@ -1,0 +1,53 @@
+.welcome__input {
+  all: unset;
+  width: 60%;
+  padding: 5px 20px 5px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  font-size: 25px;
+  background-color: rgba(250, 250, 250, 0.5);
+  color: #ffffff;
+  border-radius: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.welcome__input_state_error {
+  border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.welcome__input::placeholder {
+  color: #f3f3f3;
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 900px) {
+  .welcome__input {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .welcome__input {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome__input {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome__input {
+    font-size: 16px;
+  }
+}
