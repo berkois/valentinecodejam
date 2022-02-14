@@ -7,10 +7,12 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
+@import url(../blocks/content/content.css);
 @import url(../blocks/welcome/welcome.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/spinner/spinner.css);
 @import url(../blocks/rotate/rotate.css);
+@import url(../blocks/footer/footer.css);
 /* blocks */
 
 /* elements */
