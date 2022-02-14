@@ -1,5 +1,5 @@
-
-export const dates = [
+export { dates as default };
+const dates = [
 {number:0, imgUrl:"https://picsum.photos/200", name:"Go for a long walk", moreInfo:""},
 {number:1, imgUrl:"https://picsum.photos/200", name:"Picnic at the park", moreInfo:""},
 {number:2, imgUrl:"https://picsum.photos/200", name:"Nature hike", moreInfo:""},
@@ -50,4 +50,5 @@ export const dates = [
 {number:47, imgUrl:"https://picsum.photos/200", name:"Rock repelling", moreInfo:""},
 {number:48, imgUrl:"https://picsum.photos/200", name:"Art gallery visit", moreInfo:""},
 {number:49, imgUrl:"https://picsum.photos/200", name:"Jeep tour", moreInfo:""}, 
-]
+];
+
