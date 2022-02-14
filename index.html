@@ -2,46 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Avi Dalal, David Kaplan, and Israel Berko" />
-    <meta name="description" content="send auto-generated love messages and GIFs to your lover with zero effort!" />
+    <meta name="author" content="Avi Dalal, Israel Berko, David Kaplan" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./images/favicon.ico" />
-    <title>Valentine by KDB</title>
+
+    <title>Valentine Dating Ideas Board</title>
   </head>
 
-  <body>
-    <main class="page">
-      <header class="header">
-        <a href="#"><img class="logo" src="" /></a>
-      </header>
-      <div class="welcome">
-        <form name="welcome-form" class="form welcome__form welcome__form_type_welcome" novalidate>
-          <label class="welcome__form-label"
-            >Hello there,<br />
-            and happy Valentine!
-            <p class="welcome__form-description">
-              get auto-generated romantic message and a GIF<br />
-              and send to your beloved person via Whatsapp:
-            </p>
-            <input type="tel" class="welcome__input" id="name-input" value="" placeholder="Type phone number..." minlength="10" required />
-            <span class="welcome__input-error name-input-error">Please type full number, digits only</span>
-          </label>
-          <button type="submit" class="button welcome__submit-button" value="go">Generate Message</button>
-        </form>
-        <form name="password-form" class="form welcome__form welcome__form_type_password" novalidate>
-          <label class="welcome__form-label"
-            >Type Your Password:
-            <input type="password" class="welcome__input" id="password-input" value="" placeholder="Password" minlength="4" maxlength="4" required />
-            <span class="welcome__input-error password-input-error">Incorrect Password</span>
-          </label>
-          <button type="submit" class="button welcome__submit-button" value="go">Here We Go!</button>
-        </form>
-        <h2 class="welcome__message"></h2>
-        <button class="button welcome__go-button">Get Me In</button>
-      </div>
+  <body class="page">
+    <h1 class="Heading">Valentine Dating Ideas Board</h1>
+    <main>
+      <section class="dates">
+        <ul class="dates__list"></ul>
+      </section>
     </main>
-    <script src="./scripts/validate.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
+    <footer class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perferendis obcaecati dolore blanditiis incidunt iste! Laboriosam blanditiis commodi veniam deleniti hic ullam officiis ex quisquam temporibus, repellendus maiores aliquid repellat.</footer>
+
+    <template id="date-template">
+      <li class="dates__date">
+        <img src=" " alt=" " class="dates__image" />
+        <div class="dates__rectangle">
+          <h2 class="dates__text"></h2>
+        </div>
+      </li>
+    </template>
   </body>
+
+  <script src="./scripts/index.js" type="module"></script>
+  <script src="./scripts/date.js" type="module"></script>
 </html>
+>>>>>>> origin/david-dates-data

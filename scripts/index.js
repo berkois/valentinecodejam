@@ -3,7 +3,7 @@ const welcomeMessage = welcomeWindow.querySelector(".welcome__message");
 const welcomeForm = welcomeWindow.querySelector(".welcome__form_type_welcome");
 const passwordForm = welcomeWindow.querySelector(".welcome__form_type_password");
 const formVisibilityClass = "welcome__form_visible";
-const nameInput = welcomeForm.querySelector(".welcome__input");
+const phoneInput = welcomeForm.querySelector(".welcome__input");
 const passwordInput = passwordForm.querySelector(".welcome__input");
 const welcomeGoButton = welcomeWindow.querySelector(".welcome__go-button");
 const correctPassword = "9194";
@@ -16,9 +16,10 @@ const isCorrectPassword = (input) => {
   }
 };
 
-const showGoButton = () => {
+const showGoButton = (phoneNumber) => {
   welcomeGoButton.classList.add("welcome__go-button_active");
   welcomeGoButton.style.animationPlayState = "running";
+  // welcomeGoButton.href = `https://wa.me/${phoneNumber}?text=Hi!   Id's like${selectedActivity}`;
 };
 
 const showWelcomeMessage = (givenNumber) => {
@@ -47,12 +48,12 @@ welcomeForm.addEventListener("submit", (evt) => {
 
 passwordForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
-  const userName = nameInput.value;
+  const phoneNumber = phoneInput.value;
   const passwordEntered = passwordInput.value;
   if (isCorrectPassword(passwordEntered)) {
     makeFormInvisible(passwordForm);
-    showWelcomeMessage(userName);
-    showGoButton();
+    showWelcomeMessage(phoneNumber);
+    showGoButton(phoneNumber);
   } else {
     showInputError(passwordForm, passwordInput, { inputErrorClass: "welcome__input_state_error", errorClass: "welcome__input-error_active" });
     alert("You're too emotional... Try again.");
