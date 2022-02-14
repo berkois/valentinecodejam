@@ -1,8 +1,11 @@
 .page {
   margin: 0;
-  background-image: url(../../images/backgroung.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   min-height: 100vh;
+  font-family: Recoleta;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

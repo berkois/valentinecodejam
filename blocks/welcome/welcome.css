@@ -1,12 +1,12 @@
 .welcome {
-  margin: 15% 0 0;
-  padding: 0;
+  margin: 0 auto 20px;
+  padding: 20px;
   width: 100%;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 5%;
-  font-family: Recoleta;
+  border-radius: 30px;
+  background-color: #f4d4fa;
 }
