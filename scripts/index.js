@@ -19,7 +19,6 @@ const isCorrectPassword = (input) => {
 const showGoButton = (phoneNumber) => {
   welcomeGoButton.classList.add("welcome__go-button_active");
   welcomeGoButton.style.animationPlayState = "running";
-  // welcomeGoButton.href = `https://wa.me/${phoneNumber}?text=Hi!   Id's like${selectedActivity}`;
 };
 
 const showWelcomeMessage = (givenNumber) => {
