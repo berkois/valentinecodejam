@@ -1,5 +1,6 @@
 .dates__items-container {
-    position: absolute;
-    font-weight: bold;
-    font-size: 120px;
+  all: unset;
+  position: absolute;
+  font-weight: bold;
+  font-size: 120px;
 }
