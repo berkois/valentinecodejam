@@ -1,3 +1,6 @@
+import dates from './data.js';
+import RandomDates from "./RandomDates.js"
+
 const welcomeWindow = document.querySelector(".welcome");
 const welcomeMessage = welcomeWindow.querySelector(".welcome__message");
 const welcomeForm = welcomeWindow.querySelector(".welcome__form_type_welcome");
@@ -11,7 +14,7 @@ const formVisibilityClass = "welcome__form_visible";
 const datesList = document.querySelector(".dates__list");
 // let randomNum;
 const spinnerButton = document.querySelector(".spinner__button");
-spinnerButton.addEventListener("click", handleButtonRandom);
+//spinnerButton.addEventListener("click", handleButtonRandom);
 
 function generateDate(randomNum) {
   const dateSquare = new Date({ text: dates[randomNum].name, image: dates[randomNum].imgUrl }, "#date-template");
@@ -20,8 +23,16 @@ function generateDate(randomNum) {
   datesList.append(dateElement);
 }
 
+/*
 function handleButtonRandom() {
   const randomNum = Math.floor(Math.random() * 49);
   datesList.firstChild.remove();
   generateDate(randomNum);
 }
+*/
+
+
+
+const config = "";
+const newRandomDates = new RandomDates(dates, config,"#wordbox .dates__items-container");
+newRandomDates.initItems();

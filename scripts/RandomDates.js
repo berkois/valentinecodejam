@@ -39,11 +39,19 @@ export default class RandomDates {
   }
 
   _setEventListeners() {
-    document.querySelector(".button__stop").addEventListener("click", () => {
-      this._stopInterval();
-    });
-    document.querySelector(".button__start").addEventListener("click", () => {
-      this._startNewInterval();
+    const btn = document.querySelector(".spinner__button");
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("button__stop");
+      if(btn.classList.contains("button__stop")){
+        this._stopInterval();
+        btn.textContent = "Try another one";
+      }
+
+      else{
+        btn.textContent = "Raffle my Date Idea";
+        this._startNewInterval();
+      }
+
     });
   }
 
