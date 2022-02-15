@@ -46,6 +46,7 @@ export default class RandomDates {
       btn.classList.toggle("button__stop");
       if(btn.classList.contains("button__stop")){
         this._stopInterval();
+        const chosenDate = 
         btn.textContent = "Try another one";
       }
 
@@ -59,15 +60,15 @@ export default class RandomDates {
 
   _rotateContents(n) {
     setTimeout(function () {
-      const continer = document.querySelector(".dates__items-container");
-      const children = document.querySelector(".dates__items-container").querySelectorAll(".dates__item");
+      const container = document.querySelector(".dates__items-container");
+      const children = container.querySelectorAll(".dates__item");
       const childrenArr = Array.from(children);
       const newArr = childrenArr.slice(0, n);
-      continer.append(...newArr);
+      container.append(...newArr);
       if (n === childrenArr.length) {
         this._popPushNItems(1);
       }
-      continer.style.top = 0;
+      container.style.top = 0;
     }, 300);
   }
 

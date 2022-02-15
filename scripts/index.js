@@ -16,10 +16,17 @@ const datesList = document.querySelector(".dates__list");
 const spinnerButton = document.querySelector(".spinner__button");
 const exitBtn = document.querySelector(".popup__exit-btn");
 const popup = document.querySelector(".popup");
+const popupImage = document.querySelector(".popup__imagePopUp");
+const popupImageText = document.querySelector(".popup__imagePopUp-text");
+const datesContainer = document.querySelector(".dates__items-container");
 
-const datesContainer = document.querySelector(".dates__items-container")
-
-datesContainer.addEventListener("click", ()=> {openPopup(popup)});
+datesContainer.addEventListener("click", () => {
+  
+  const  ObjElement = dates.find( obj => obj.name == datesContainer.firstElementChild.textContent);
+  console.log(ObjElement);
+  popupImage.src =  ObjElement.imgUrl;
+  popupImageText.textContent = ObjElement.moreInfo;
+  openPopup(popup)});
 
 exitBtn.addEventListener("click", ()=>{
   closePopup(popup);
