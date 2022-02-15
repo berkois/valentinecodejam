@@ -2,4 +2,6 @@
     position: absolute;
     font-weight: bold; 
     margin: auto;
+    border: 5px purple solid ;
+    border-radius: 4px;
 }

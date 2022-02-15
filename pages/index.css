@@ -15,6 +15,7 @@
 @import url(../blocks/rotate/rotate.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/modal/modal.css);
+@import url(../blocks/popup/popup.css);
 /* blocks */
 
 /* elements */
@@ -25,6 +26,7 @@
 @import url(../blocks/spinner/__button/spinner__button.css);
 @import url(../blocks/dates/__items-container/dates__items-container.css);
 @import url(../blocks/dates/__items/dates__item.css);
+@import url(../blocks/dates/__item-text/dates__item-text.css);
 @import url(../blocks/dates/__mask/dates__mask.css);
 @import url(../blocks/modal/__container/modal__container.css);
 @import url(../blocks/modal/__image/modal__image.css);
@@ -34,6 +36,11 @@
 @import url(../blocks/modal/__share-item/modal__share-item.css);
 @import url(../blocks/modal/__share-link/modal__share-link.css);
 @import url(../blocks/modal/__share-list/modal__share-list.css);
+@import url(../blocks/popup/__window/popup__window.css);
+@import url(../blocks/popup/__imagePopUp/popup__imagePopUp.css);
+@import url(../blocks/popup/__imagePopUp-text/popup__imagePopUp-text.css);
+@import url(../blocks/popup/__exit-icon/popup__exit-icon.css);
+@import url(../blocks/popup/__exit-btn/popup__exit-btn.css);
 /* elements */
 
 
@@ -46,5 +53,9 @@
 @import url("../blocks/dates/__item-img/dates__item-img.css");
 /* random */
 /* modifiers */
+@import url(../blocks/popup/_active/popup_active.css);
 
 /* modifiers */
+
+
+

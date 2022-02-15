@@ -2,7 +2,7 @@ export default class RandomDates {
   constructor(dates, config, wordboxEl) {
     this._wordlist = new Array();
     dates.map((date) => {
-      this._wordlist.push(date.imgUrl);
+      this._wordlist.push(date.name);
     });
     this._wordbox = wordboxEl;
     this._timer1 = "";
@@ -30,12 +30,13 @@ export default class RandomDates {
 
   _buildItem(text) {
     const listItem = document.createElement("li");
-    const img = document.createElement("img");
+    const span = document.createElement("span");
     listItem.classList.add("dates__item");
-    img.classList.add("dates__item-img");
-    img.src = text;
-    img.loading = "lazy";
-    listItem.append(img);
+    span.innerText = text;
+    span.classList.add("dates__item-text");
+    // img.src = text;
+    // img.loading = "lazy";
+    listItem.append(span);
     return listItem;
   }
 

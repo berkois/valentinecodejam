@@ -1,4 +1,5 @@
 import dates from "./data.js"
+import { closePopup, openPopup } from "./utils.js";
 import RandomDates from "./RandomDates.js"
 
 const welcomeWindow = document.querySelector(".welcome");
@@ -13,19 +14,22 @@ const formVisibilityClass = "welcome__form_visible";
 const wordboxEl = document.querySelector("#wordbox");
 const datesList = document.querySelector(".dates__list");
 const spinnerButton = document.querySelector(".spinner__button");
-//spinnerButton.addEventListener("click", handleButtonRandom);
+const exitBtn = document.querySelector(".popup__exit-btn");
+const popup = document.querySelector(".popup");
 
-function generateDate() {
-const rd = new RandomDates(dates,"", wordboxEl);
-  rd.initItems();
-}
 
-/*
-function handleButtonRandom() {
-  wordboxEl.firstChild ?  wordboxEl.firstChild.remove():null;
-  generateDate();
+exitBtn.addEventListener("click", ()=>{
+  closePopup(popup);
+})
+
+popup.addEventListener("click", function (e) {
+  if (
+    e.target.classList.contains("popup_active") ||
+    e.target.classList.contains("popup__exit-icon")
+  ) {
+    closePopup(popup);
 }
-*/
+}); 
 
 
 

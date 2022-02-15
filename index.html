@@ -10,30 +10,48 @@
     <title>Valentine Dating Ideas Board</title>
   </head>
   <body class="page">
+
+    <div class="popup popup_active" id="imagePopUp" >
+      <div class="popup__window popup__window_imagePopUp">
+        <button class="popup__exit-btn" type="reset" aria-label="">
+          <img
+            class="popup__exit-icon"
+            src="images/exit_icon.png"
+            alt="exit icon button"
+          />
+        </button>
+        <img src="./images/biking.jpg" class="popup__imagePopUp" alt=" " />
+        <p class="popup__imagePopUp-text">biking</p>
+      </div>
+    </div>
+
     <div class="page__background"></div>
     <header class="header">
       <img class="logo" src="./images/logo_valentine.png" />
     </header>
     <main class="content">
+      
+      
+
       <section class="welcome">
-        <h1 class="welcome__message">Date idea picker</h1>
+        <h1 class="welcome__message"> Fun Date Idea Selector </h1>
         <p class="welcome__description">Want to enhance your Valentine day with a new original date idea?</p>
         <p class="welcome__description">Click the button below!</p>
         <img class="welcome__image" src="./images/date_welcome.png" />
       </section>
+
       <section class="spinner">
         <button class="button spinner__button">Raffle my Date Idea</button>
-      </section>
+      </section> 
 
       <section class="dates">
         <div class="dates__mask" id="wordbox">
-          <ul class="dates__items-container rotate">
-            <li></li>
+          <ul class="dates__items-container">
           </ul>
         </div>
       </section>
 
-      <section class="modal">
+      <!-- <section class="modal">
         <div class="modal__container">
           <h2 class="modal__name"></h2>
           <img src=" " alt="" class="modal__image" />
@@ -50,7 +68,8 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+      
       <section class="dates">
         <div class="dates__mask" id="wordbox">
             <ul class="dates__items-container rotate">
