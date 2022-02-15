@@ -2,7 +2,7 @@ export default class RandomDates {
   constructor(dates, config, wordboxEl) {
     this._wordlist = new Array();
     dates.map((date) => {
-      this._wordlist.push(date.imgUrl);
+      this._wordlist.push([date.imgUrl]);
     });
     this._wordbox = wordboxEl;
     this._timer1 = "";
