@@ -17,10 +17,13 @@ const spinnerButton = document.querySelector(".spinner__button");
 const exitBtn = document.querySelector(".popup__exit-btn");
 const popup = document.querySelector(".popup");
 
+const datesContainer = document.querySelector(".dates__items-container")
+
+datesContainer.addEventListener("click", ()=> {openPopup(popup)});
 
 exitBtn.addEventListener("click", ()=>{
   closePopup(popup);
-})
+});
 
 popup.addEventListener("click", function (e) {
   if (
