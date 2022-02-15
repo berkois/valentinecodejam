@@ -2,7 +2,7 @@ export default class RandomDates {
   constructor(dates, config, wordboxEl) {
     this._wordlist = new Array();
     dates.map((date) => {
-      this._wordlist.push(date.name);
+      this._wordlist.push(date.imgUrl);
     });
     this._wordbox = wordboxEl;
     this._timer1 = "";
@@ -11,7 +11,7 @@ export default class RandomDates {
 
   _buildContents() {
     const items = this._wordlist.map(this._buildItem);
-    const containerEl = this._wordbox;
+    const containerEl = document.querySelector(this._wordbox);
     items.forEach((item) => {
       containerEl.append(item);
     });
@@ -30,20 +30,29 @@ export default class RandomDates {
 
   _buildItem(text) {
     const listItem = document.createElement("li");
-    const img = document.createElement("span");
+    const img = document.createElement("img");
     listItem.classList.add("dates__item");
-    //new_row.textContent = text;
-    img.textContent = text;
+    img.classList.add("dates__item-img");
+    img.src = text;
+    img.loading = "lazy";
     listItem.append(img);
     return listItem;
   }
 
   _setEventListeners() {
-    // document.querySelector(".button__stop").addEventListener("click", () => {
-    //   this._stopInterval();
-    // });
-    this.button.addEventListener("click", () => {
-      this._startNewInterval();
+    const btn = document.querySelector(".spinner__button");
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("button__stop");
+      if(btn.classList.contains("button__stop")){
+        this._stopInterval();
+        btn.textContent = "Try another one";
+      }
+
+      else{
+        btn.textContent = "Raffle my Date Idea";
+        this._startNewInterval();
+      }
+
     });
     
   }

@@ -2,7 +2,7 @@ import dates from './data.js';
 import RandomDates from "./RandomDates.js"
 
 const config = "";
-const newRandomDates = new RandomDates(dates, config,".dates__items-container");
+const newRandomDates = new RandomDates(dates, config,"#wordbox .dates__items-container");
 newRandomDates.initItems();
 /*
 document.querySelector('.button__stop').addEventListener('click', stopInterval);
