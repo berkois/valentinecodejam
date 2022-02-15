@@ -2,15 +2,16 @@ export default class RandomDates {
   constructor(dates, config, wordboxEl) {
     this._wordlist = new Array();
     dates.map((date) => {
-      this._wordlist.push(date.imgUrl);
+      this._wordlist.push(date.name);
     });
-    this._wordbox = document.querySelector(wordboxEl);
+    this._wordbox = wordboxEl;
     this._timer1 = "";
+    this.button= document.querySelector(".spinner__button")
   }
 
   _buildContents() {
     const items = this._wordlist.map(this._buildItem);
-    const containerEl = this._wordbox;
+    const containerEl = document.querySelector(this._wordbox);
     items.forEach((item) => {
       containerEl.append(item);
     });
@@ -29,7 +30,7 @@ export default class RandomDates {
 
   _buildItem(text) {
     const listItem = document.createElement("li");
-    const img = document.createElement("img");
+    const img = document.createElement("span");
     listItem.classList.add("dates__item");
     img.classList.add("dates__item-img");
     img.src = text;
@@ -53,6 +54,7 @@ export default class RandomDates {
       }
 
     });
+    
   }
 
   _rotateContents(n) {
@@ -85,4 +87,6 @@ export default class RandomDates {
     div.classList.add("rotate");
     this._timer1 = setInterval(this._animate(), 2000);
   }
+  
 }
+
