@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: transparent;
     max-width: 43%;
+    max-height: 80vh;
     padding: 0;
     
   }
