@@ -7,3 +7,10 @@
     margin: auto;
     justify-content: center;
 }
+
+
+@media screen  and (max-width: 450px) {
+    .dates__mask {
+        width: 92%;
+    }
+  }
