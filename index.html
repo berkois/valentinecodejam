@@ -25,7 +25,27 @@
         <button class="button spinner__button">Raffle my Date Idea</button>
       </section>
       <section class="dates">
-        <ul class="dates__list"></ul>
+        <div class="dates__mask" id="wordbox">
+          <ul class="dates__items-container rotate"></ul>
+        </div>
+      </section>
+      <section class="modal">
+        <div class="modal__container">
+          <h2 class="modal__name"></h2>
+          <img src=" " alt="" class="modal__image" />
+          <button type="button" name="share" class="button modal__share-button">Share</button>
+          <ul class="modal__share-list">
+            <li class="modal__share-item">
+              <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="whatsapp share button" class="modal__share-icon" /></button>
+            </li>
+            <li class="modal__share-item">
+              <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="email share button" class="modal__share-icon" /></button>
+            </li>
+            <li class="modal__share-item">
+              <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="link share button" class="modal__share-icon" /></button>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">&copy; 2022 Avi Dalal, David Kaplan, Israel Berko</footer>

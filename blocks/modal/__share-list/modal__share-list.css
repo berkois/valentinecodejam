@@ -1,0 +1,8 @@
+.modal__share-list {
+  all: unset;
+  display: none;
+}
+
+.modal__share-list_active {
+  display: inline;
+}

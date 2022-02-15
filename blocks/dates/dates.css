@@ -1,5 +1,6 @@
 .dates {
-    margin: 0px auto;
-    width: 700px;
-    margin-top: 50px;
-  }
+  margin: 0px auto;
+  width: 700px;
+  margin-top: 50px;
+  position: relative;
+}
