@@ -9,3 +9,10 @@
   background-color: #5c055f;
   color: #ffffff;
 }
+
+
+@media screen  and (max-width: 450px) {
+  .spinner__button {
+    font-size: 18px;
+  }
+}

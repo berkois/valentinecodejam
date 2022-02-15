@@ -4,4 +4,6 @@
     margin: auto;
     border: 5px purple solid ;
     border-radius: 4px;
+    padding: 0;
+    list-style: none;
 }

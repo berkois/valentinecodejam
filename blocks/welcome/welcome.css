@@ -10,4 +10,11 @@
   border-radius: 30px;
   background-color: #ffffff88;
   position: relative;
+  box-sizing: border-box;
+}
+
+@media screen  and (max-width: 450px) {
+  .welcome {
+  max-width: 92%;
+  }
 }

@@ -29,6 +29,7 @@
 @import url(../blocks/dates/__item-text/dates__item-text.css);
 @import url(../blocks/dates/__mask/dates__mask.css);
 @import url(../blocks/modal/__container/modal__container.css);
+@import url(../blocks/dates/__item-img/dates__item-img.css);
 @import url(../blocks/modal/__image/modal__image.css);
 @import url(../blocks/modal/__name/modal__name.css);
 @import url(../blocks/modal/__share-button/modal__share-button.css);
@@ -44,14 +45,7 @@
 /* elements */
 
 
-/* random */
-@import url("../blocks/rotate/rotate.css");
-@import url("../blocks/dates/dates.css");
-@import url("../blocks/dates/__items-container/dates__items-container.css");
-@import url("../blocks/dates/__items/dates__item.css");
-@import url("../blocks/dates/__mask/dates__mask.css");
-@import url("../blocks/dates/__item-img/dates__item-img.css");
-/* random */
+
 /* modifiers */
 @import url(../blocks/popup/_active/popup_active.css);
 

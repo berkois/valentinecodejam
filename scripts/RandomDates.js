@@ -55,7 +55,6 @@ export default class RandomDates {
       }
 
     });
-    
   }
 
   _rotateContents(n) {
