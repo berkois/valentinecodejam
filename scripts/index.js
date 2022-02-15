@@ -23,7 +23,6 @@ const datesContainer = document.querySelector(".dates__items-container");
 datesContainer.addEventListener("click", () => {
   
   const  ObjElement = dates.find( obj => obj.name == datesContainer.firstElementChild.textContent);
-  console.log(ObjElement);
   popupImage.src =  ObjElement.imgUrl;
   popupImageText.textContent = ObjElement.moreInfo;
   openPopup(popup)});
