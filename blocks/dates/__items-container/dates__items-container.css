@@ -2,4 +2,6 @@
     position: absolute;
     font-weight: bold; 
     margin: auto;
+    padding: 0;
+    list-style: none;
 }
