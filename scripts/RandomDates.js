@@ -31,8 +31,9 @@ export default class RandomDates {
     const listItem = document.createElement("li");
     const img = document.createElement("img");
     listItem.classList.add("dates__item");
-    //new_row.textContent = text;
+    img.classList.add("dates__item-img");
     img.src = text;
+    img.loading = "lazy";
     listItem.append(img);
       return listItem;
   }
