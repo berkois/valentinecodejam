@@ -1,2 +1,9 @@
 .modal__share-button {
+  border-radius: 50%;
+  background-image: url("../../../images/share.svg");
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
 }
