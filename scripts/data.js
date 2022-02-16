@@ -1,7 +1,7 @@
 export { dates as default };
 const dates = [
-  { number: 0, imgUrl: "./images/lectur.jpg", name: "Go for a long walk", moreInfo: "place holder for more info about the specific date" },
-  { number: 1, imgUrl: "./images/longwalk.jpg", name: "Picnic at the park", moreInfo: "place holder for more info about the specific date" },
+  { number: 0, imgUrl: "./images/longwalk.jpg", name: "Go for a long walk", moreInfo: "place holder for more info about the specific date" },
+  { number: 1, imgUrl: "./images/picnic.jpg", name: "Picnic at the park", moreInfo: "place holder for more info about the specific date" },
   { number: 2, imgUrl: "./images/naturehike.jpg", name: "Nature hike", moreInfo: "place holder for more info about the specific date" },
   { number: 3, imgUrl: "./images/winecheese.jpg", name: "Cheese and wine evening", moreInfo: "place holder for more info about the specific date" },
   { number: 4, imgUrl: "./images/bungee.jpg", name: "Bungee jumping", moreInfo: "place holder for more info about the specific date" },
