@@ -25,7 +25,7 @@
 @import url(../blocks/welcome/__description/welcome__description.css);
 @import url(../blocks/spinner/__button/spinner__button.css);
 @import url(../blocks/dates/__items-container/dates__items-container.css);
-@import url(../blocks/dates/__items/dates__item.css);
+@import url(../blocks/dates/__item/dates__item.css);
 @import url(../blocks/dates/__item-text/dates__item-text.css);
 @import url(../blocks/dates/__mask/dates__mask.css);
 @import url(../blocks/modal/__container/modal__container.css);
@@ -44,12 +44,7 @@
 @import url(../blocks/popup/__exit-btn/popup__exit-btn.css);
 /* elements */
 
-
-
 /* modifiers */
 @import url(../blocks/popup/_active/popup_active.css);
 
 /* modifiers */
-
-
-
