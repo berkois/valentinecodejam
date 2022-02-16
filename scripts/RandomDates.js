@@ -1,19 +1,18 @@
 export default class RandomDates {
   constructor(dates, config, wordboxEl) {
-    this._wordlist = new Array();
+    this._wordList = new Array();
     dates.map((date) => {
-      this._wordlist.push(date.name);
+      this._wordList.push(date.name);
     });
-    this._wordbox = wordboxEl;
+    this._wordbox = document.querySelector(wordboxEl);
     this._timer1 = "";
-    this.button= document.querySelector(".spinner__button")
+    this._button = document.querySelector(".spinner__button");
   }
 
   _buildContents() {
-    const items = this._wordlist.map(this._buildItem);
-    const containerEl = document.querySelector(this._wordbox);
+    const items = this._wordList.map(this._buildItem);
     items.forEach((item) => {
-      containerEl.append(item);
+      this._wordbox.append(item);
     });
   }
 
@@ -24,7 +23,7 @@ export default class RandomDates {
   }
 
   _animate() {
-    const wordIndex = this._randomIndex(this._wordlist.length);
+    const wordIndex = this._randomIndex(this._wordList.length);
     this._rotateContents(wordIndex);
   }
 
@@ -34,27 +33,21 @@ export default class RandomDates {
     listItem.classList.add("dates__item");
     span.innerText = text;
     span.classList.add("dates__item-text");
-    // img.src = text;
-    // img.loading = "lazy";
     listItem.append(span);
     return listItem;
   }
 
   _setEventListeners() {
-    const btn = document.querySelector(".spinner__button");
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("button__stop");
-      if(btn.classList.contains("button__stop")){
-        this._stopInterval();
-        const chosenDate = 
-        btn.textContent = "Try another one";
-      }
-
-      else{
-        btn.textContent = "Raffle my Date Idea";
+    this._button = document.querySelector(".spinner__button");
+    this._button.addEventListener("click", () => {
+      if (!this._button.classList.contains("button__start")) {
         this._startNewInterval();
+        this._button.textContent = "Stop";
+      } else {
+        this._stopInterval();
+        this._button.textContent = "Try Another Date";
       }
-
+      this._button.classList.toggle("button__start");
     });
   }
 
@@ -78,16 +71,13 @@ export default class RandomDates {
   }
 
   _stopInterval() {
-    const div = document.querySelector(".dates__items-container"); // Get element from DOM
-    div.classList.remove("rotate");
+    this._div.classList.remove("rotate");
     clearInterval(this._timer1);
   }
 
   _startNewInterval() {
-    const div = document.querySelector(".dates__items-container"); // Get element from DOM
-    div.classList.add("rotate");
+    this._div = document.querySelector(".dates__items-container"); // Get element from DOM
+    this._div.classList.add("rotate");
     this._timer1 = setInterval(this._animate(), 2000);
   }
-  
 }
-
