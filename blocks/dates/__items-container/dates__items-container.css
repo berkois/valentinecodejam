@@ -1,12 +1,7 @@
 .dates__items-container {
-    position: absolute;
-    font-weight: bold; 
-    margin: auto;
-    border-left: 5px pink solid ;
-    border-right: 5px pink solid ;
-    border-radius: 7px;
-    padding: 0;
-    list-style: none;
-    background-color: rgba(220, 218, 215, 0.53);
-    cursor: pointer;
+  position: absolute;
+  font-weight: bold;
+  margin: auto;
+  padding: 0;
+  list-style: none;
 }
