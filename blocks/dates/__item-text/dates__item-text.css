@@ -1,7 +1,7 @@
 .dates__item-text {
   font-weight: 700;
   font-size: 35px;
-  
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
