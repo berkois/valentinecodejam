@@ -13,12 +13,16 @@ const popupImage = document.querySelector(".popup__imagePopUp");
 const popupImageText = document.querySelector(".popup__imagePopUp-text");
 const datesContainer = document.querySelector(".dates__items-container");
 
+function setItem(ObjElement){
+  popupImage.src = ObjElement.imgUrl;
+  popupImageText.textContent = ObjElement.moreInfo;
+  openPopup(popup);
+}
+
 datesContainer.addEventListener("click", () => {
   if (!datesContainer.classList.contains("rotate")) {
     const ObjElement = dates.find((obj) => obj.name == datesContainer.firstElementChild.textContent);
-    popupImage.src = ObjElement.imgUrl;
-    popupImageText.textContent = ObjElement.moreInfo;
-    openPopup(popup);
+    setItem(ObjElement);
   } else {
     datesContainer.classList.remove("rotate");
     spinnerButton.textContent = "Try Another Date";
