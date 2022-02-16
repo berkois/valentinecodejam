@@ -2,10 +2,6 @@ import dates from "./data.js";
 import { closePopup, openPopup } from "./utils.js";
 import RandomDates from "./RandomDates.js";
 
-const welcomeWindow = document.querySelector(".welcome");
-const welcomeMessage = welcomeWindow.querySelector(".welcome__message");
-// const wordboxEl = document.querySelector("#wordbox");
-const datesList = document.querySelector(".dates__list");
 const spinnerButton = document.querySelector(".spinner__button");
 const exitBtn = document.querySelector(".popup__exit-btn");
 const popup = document.querySelector(".popup");
