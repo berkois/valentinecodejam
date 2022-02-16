@@ -3,3 +3,9 @@
   text-align: center;
   margin: 2px auto 0;
 }
+
+@media screen and (max-width: 450px) {
+  .welcome__description {
+    font-size: 18px;
+  }
+}

@@ -1,9 +1,19 @@
 .dates__item {
-  height: 150px;
+  height: 130px;
   max-height: 100%;
   margin: 0px;
   background-size: contain;
   text-align: center;
-  padding: 35px 10px;
+  padding: 10px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .dates__item {
+    height: 80px;
+  }
 }
