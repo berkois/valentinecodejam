@@ -7,13 +7,12 @@ export default class RandomDates {
     this._config = config;
     this._wordbox = document.querySelector(config.spinnerContainer);
     this.modal = document.q;
-    this._timer1 = "";
   }
 
   initItems() {
     this._setEventListeners();
     this._buildContents();
-    this._timer1 = setInterval(this._animate(), 2000);
+
   }
 
   _buildContents() {
@@ -100,17 +99,17 @@ export default class RandomDates {
     const randIndex = (Math.random() * max) | 0;
     return randIndex > 10 ? randIndex : this._randomIndex(max);
   }
-
+/*
   _stopInterval() {
     this._wordbox.classList.remove("rotate");
     clearInterval(this._timer1);
   }
-
+*/
   _startNewInterval() {
     this._wordbox.classList.add("rotate");
-    this._timer1 = setInterval(this._animate(), 2000);
+    const timer1 = setInterval(() =>{this._animate()}, 500);
     setTimeout(function(){
-      clearInterval(this._timer1);
+      clearInterval(timer1);
       document.querySelector(".spinner__items-container").classList.remove("rotate");
   },this._randomIndex(5000))
   }
