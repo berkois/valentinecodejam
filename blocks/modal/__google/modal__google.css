@@ -1,11 +1,6 @@
 .modal__google {
-  border-radius: 30px;
-  box-shadow: 2px 2px 4px #0a0a0a;
   font-size: 18px;
   line-height: 1.2;
-  text-align: center;
-  background-color: #5c055f;
-  color: #ffffff;
   margin: 10px auto;
   padding: 10px;
 }

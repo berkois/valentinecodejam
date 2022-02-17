@@ -57,10 +57,4 @@ export const modalImage = modal.querySelector(".modal__image");
 export const modalName = modal.querySelector(".modal__name");
 export const modalDescription = modal.querySelector(".modal__description");
 export const googleButton = modal.querySelector("#google-it");
-// export const shareButton = modal.querySelector(".modal__share-button_type_share");
 export const googlePrefix = "https://www.google.com/search?q=";
-
-export const config = {
-  spinnerButton: ".spinner__button",
-  spinnerContainer: ".spinner__items-container",
-};
