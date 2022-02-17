@@ -1,5 +1,5 @@
 import { closeModal, openModal } from "../utils/utils.js";
-import { modal, modalCloseButton, modalDescription } from "../utils/data.js";
+import { modal, modalCloseButton } from "../utils/data.js";
 
 export default class RandomDates {
   constructor(dates, config) {
