@@ -3,3 +3,9 @@
   max-height: 55%;
   border-radius: 5%;
 }
+
+@media screen and (max-height: 400px) {
+  .modal__image {
+    max-height: 40%;
+  }
+}
