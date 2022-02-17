@@ -14,7 +14,7 @@ export const dates = [
   { number: 12, imgUrl: "./images/fancyDine.jpg", name: "Go out to eat at a fancy restaurant", moreInfo: "place holder for more info about the specific date" },
   { number: 13, imgUrl: "./images/cooking.jpg", name: "Cook a meal at home together", moreInfo: "place holder for more info about the specific date" },
   { number: 14, imgUrl: "./images/lectur.jpg", name: "Go to a lecture of interest", moreInfo: "place holder for more info about the specific date" },
-  { number: 15, imgUrl: "./images/museam.jpg", name: "Go to a Museam", moreInfo: "place holder for more info about the specific date" },
+  { number: 15, imgUrl: "./images/museam.jpg", name: "Go to a Museum", moreInfo: "place holder for more info about the specific date" },
   { number: 16, imgUrl: "./images/biking.jpg", name: "Go biking", moreInfo: "place holder for more info about the specific date" },
   { number: 17, imgUrl: "./images/boardgame.jpg", name: "Board game night", moreInfo: "place holder for more info about the specific date" },
   { number: 18, imgUrl: "./images/rollerblade.jpg", name: "Go rollerblading", moreInfo: "place holder for more info about the specific date" },
