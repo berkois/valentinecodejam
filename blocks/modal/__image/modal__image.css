@@ -1,2 +1,5 @@
 .modal__image {
+  max-width: 80%;
+  max-height: 55%;
+  border-radius: 5%;
 }

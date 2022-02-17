@@ -1,5 +1,4 @@
-export { dates as default };
-const dates = [
+export const dates = [
   { number: 0, imgUrl: "./images/longwalk.jpg", name: "Go for a long walk", moreInfo: "place holder for more info about the specific date" },
   { number: 1, imgUrl: "./images/picnic.jpg", name: "Picnic at the park", moreInfo: "place holder for more info about the specific date" },
   { number: 2, imgUrl: "./images/naturehike.jpg", name: "Nature hike", moreInfo: "place holder for more info about the specific date" },
@@ -37,7 +36,7 @@ const dates = [
   { number: 34, imgUrl: "./images/vol.jpg", name: "volunteering at a local organization", moreInfo: "place holder for more info about the specific date" },
   { number: 35, imgUrl: "./images/comedy.jpg", name: "See a standup comedy show", moreInfo: "place holder for more info about the specific date" },
   { number: 36, imgUrl: "./images/boardwalk.jpg", name: "Boardwalk stroll", moreInfo: "place holder for more info about the specific date" },
-  { number: 37, imgUrl: "./images/newFood.jpg", name: "Eating out at a new resteraunt", moreInfo: "place holder for more info about the specific date" },
+  { number: 37, imgUrl: "./images/newFood.jpg", name: "Eating out at a new restaurant", moreInfo: "place holder for more info about the specific date" },
   { number: 38, imgUrl: "./images/binge.jpg", name: "Binge watch a series", moreInfo: "place holder for more info about the specific date" },
   { number: 39, imgUrl: "./images/baseball.jpg", name: "Buy tickets to a sporting event", moreInfo: "place holder for more info about the specific date" },
   { number: 40, imgUrl: "./images/gambling.jpg", name: "Gambling", moreInfo: "place holder for more info about the specific date" },
@@ -51,3 +50,17 @@ const dates = [
   { number: 48, imgUrl: "./images/gallery.jpg", name: "Art gallery visit", moreInfo: "place holder for more info about the specific date" },
   { number: 49, imgUrl: "./images/jeep.jpg", name: "Jeep tour", moreInfo: "place holder for more info about the specific date" },
 ];
+
+export const modal = document.querySelector(".modal");
+export const modalCloseButton = document.querySelector(".modal__close-icon");
+export const modalImage = modal.querySelector(".modal__image");
+export const modalName = modal.querySelector(".modal__name");
+export const modalDescription = modal.querySelector(".modal__description");
+export const googleButton = modal.querySelector("#google-it");
+// export const shareButton = modal.querySelector(".modal__share-button_type_share");
+export const googlePrefix = "https://www.google.com/search?q=";
+
+export const config = {
+  spinnerButton: ".spinner__button",
+  spinnerContainer: ".spinner__items-container",
+};

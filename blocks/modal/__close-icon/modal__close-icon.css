@@ -1,0 +1,6 @@
+.modal__close-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  cursor: pointer;
+}

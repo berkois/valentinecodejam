@@ -1,4 +1,4 @@
-.dates__mask {
+.spinner__mask {
   position: relative;
   width: 100%;
   height: 150px;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .dates__mask {
+  .spinner__mask {
     width: 92%;
     height: 100px;
   }
