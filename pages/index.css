@@ -34,11 +34,6 @@
 @import url(../blocks/modal/__name/modal__name.css);
 @import url(../blocks/modal/__description/modal__description.css);
 @import url(../blocks/modal/__google/modal__google.css);
-@import url(../blocks/modal/__share-button/modal__share-button.css);
-@import url(../blocks/modal/__share-icon/modal__share-icon.css);
-@import url(../blocks/modal/__share-item/modal__share-item.css);
-@import url(../blocks/modal/__share-link/modal__share-link.css);
-@import url(../blocks/modal/__share-list/modal__share-list.css);
 /* elements */
 
 /* modifiers */

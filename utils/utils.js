@@ -3,6 +3,11 @@ import { modal, modalImage, modalName, googleButton, googlePrefix, modalDescript
 const closeModal = () => {
   modal.classList.remove("modal_active");
   document.removeEventListener("keydown", escapeKey);
+  modalName.textContent = " ";
+  modalImage.src = " ";
+  modalImage.alt = " ";
+  modalDescription.textContent = " ";
+  googleButton.href = " ";
 };
 
 const escapeKey = (evt) => {
