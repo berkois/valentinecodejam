@@ -42,25 +42,22 @@ export default class RandomDates {
     return listItem;
   }
 
+
+  
   _setEventListeners() {
     this._button = document.querySelector(this._config.spinnerButton);
-    const container = document.querySelector(".spinner__items-container");
+
     this._button.addEventListener("click", () => {
       if (!this._button.classList.contains("button__start")) {
         this._startNewInterval();
-        this._button.textContent = "Stop";
-      } else {
+       // this._button.textContent = "Stop";
+      }/* else {
         this._stopInterval();
         this._button.textContent = "Try Another Date";
       }
-      this._button.classList.toggle("button__start");
+      this._button.classList.toggle("button__start");*/
     });
     
-    container.addEventListener(
-      "transitionend",
-      function () {
-       console.log("transitionend");
-        });
 
 
     this._wordbox.addEventListener("click", () => {
@@ -112,5 +109,9 @@ export default class RandomDates {
   _startNewInterval() {
     this._wordbox.classList.add("rotate");
     this._timer1 = setInterval(this._animate(), 2000);
+    setTimeout(function(){
+      clearInterval(this._timer1);
+      document.querySelector(".spinner__items-container").classList.remove("rotate");
+  },this._randomIndex(5000))
   }
 }
