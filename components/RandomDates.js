@@ -48,6 +48,7 @@ export default class RandomDates {
 
     this._button.addEventListener("click", () => {
       if (!this._button.classList.contains("button__start")) {
+        this._button.disabled = true;
         this._startNewInterval();
       }
     });
@@ -97,10 +98,13 @@ export default class RandomDates {
 
   _startNewInterval() {
     this._wordbox.classList.add("rotate");
+    const spinnerButton = document.querySelector(".spinner__button");
     const timer1 = setInterval(() =>{this._animate()}, 500);
     setTimeout(function(){
       clearInterval(timer1);
       document.querySelector(".spinner__items-container").classList.remove("rotate");
+      spinnerButton.textContent = "Try Another Date";
+      spinnerButton.disabled = false;
   },this._randomIndex(5000))
   }
 }
