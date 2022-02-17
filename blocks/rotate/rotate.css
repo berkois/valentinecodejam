@@ -1,9 +1,9 @@
 @keyframes animatename {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-1325px);
   }
   100% {
-    transform: translateY(-1325px);
+    transform: translateY(0px);
   }
 }
 .rotate {
