@@ -86,7 +86,7 @@ export default class RandomDates {
     this._wordbox.classList.add("rotate");
     const spinnerButton = document.querySelector(".spinner__button");
     const timer1 = setInterval(() => {
-      this._rotateContents(this,_randomIndex(this._wordList.length));
+      this._rotateContents(this._randomIndex(this._wordList.length));
     }, 500);
     setTimeout(function () {
       clearInterval(timer1);
