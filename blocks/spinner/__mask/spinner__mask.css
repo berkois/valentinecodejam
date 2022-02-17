@@ -10,6 +10,11 @@
   border-left: 5px purple solid;
   border-right: 5px purple solid;
   border-radius: 10%;
+  transition: border-radius 0.5s ease-in-out;
+}
+
+.spinner__mask:hover {
+  border-radius: 15%;
 }
 
 @media screen and (max-width: 450px) {
