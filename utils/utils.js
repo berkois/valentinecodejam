@@ -15,6 +15,7 @@ const escapeKey = (evt) => {
 const openModal = (selectedDate) => {
   modalName.textContent = selectedDate.name;
   modalImage.src = selectedDate.imgUrl;
+  modalImage.alt = `An illustration of ${selectedDate.name} activity.`;
   modalDescription.textContent = selectedDate.moreInfo;
   googleButton.href = `${googlePrefix}${encodeURIComponent(selectedDate.name)}`;
   modal.classList.add("modal_active");
