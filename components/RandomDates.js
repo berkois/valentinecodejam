@@ -12,7 +12,6 @@ export default class RandomDates {
   initItems() {
     this._setEventListeners();
     this._buildContents();
-
   }
 
   _buildContents() {
@@ -41,8 +40,6 @@ export default class RandomDates {
     return listItem;
   }
 
-
-  
   _setEventListeners() {
     this._button = document.querySelector(this._config.spinnerButton);
 
@@ -52,17 +49,11 @@ export default class RandomDates {
         this._startNewInterval();
       }
     });
-    
-
 
     this._wordbox.addEventListener("click", () => {
       if (!this._wordbox.classList.contains("rotate")) {
         const selectedDate = this._dates.find((obj) => obj.name == this._wordbox.firstElementChild.textContent);
         openModal(selectedDate);
-      } else {
-        this._wordbox.classList.remove("rotate");
-        this._button.textContent = "Try Another Date";
-        this._button.classList.toggle("button__start");
       }
     });
 
@@ -99,12 +90,14 @@ export default class RandomDates {
   _startNewInterval() {
     this._wordbox.classList.add("rotate");
     const spinnerButton = document.querySelector(".spinner__button");
-    const timer1 = setInterval(() =>{this._animate()}, 500);
-    setTimeout(function(){
+    const timer1 = setInterval(() => {
+      this._animate();
+    }, 500);
+    setTimeout(function () {
       clearInterval(timer1);
       document.querySelector(".spinner__items-container").classList.remove("rotate");
       spinnerButton.textContent = "Try Another Date";
       spinnerButton.disabled = false;
-  },this._randomIndex(5000))
+    }, this._randomIndex(5000));
   }
 }
