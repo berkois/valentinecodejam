@@ -18,6 +18,6 @@
 .button[disabled]{
   background-color: #cccccc;
   color: #666666;
-  cursor: wait;
+  cursor: not-allowed;
 }
 
