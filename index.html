@@ -10,26 +10,16 @@
     <title>Valentine Dating Ideas Board</title>
   </head>
   <body class="page">
-    <!-- <div class="popup" id="imagePopUp">
-      <div class="popup__window popup__window_imagePopUp">
-        <button class="popup__exit-btn" type="reset" aria-label="">
-          <img class="popup__exit-icon" src="images/exit_icon.png" alt="exit icon button" />
-        </button>
-        <img src=" " class="popup__imagePopUp" alt=" " />
-        <p class="popup__imagePopUp-text"></p>
-      </div>
-    </div> -->
-
     <div class="page__background"></div>
     <header class="header">
-      <img class="logo" src="./images/logo_valentine.png" />
+      <img class="logo" src="./images/logo_valentine.png" alt="logo" />
     </header>
     <main class="content">
       <section class="welcome">
         <h1 class="welcome__message">Fun Date Idea Selector</h1>
         <p class="welcome__description">Want to enhance your Valentine's Day with a new original date idea?</p>
         <p class="welcome__description">Click the button!</p>
-        <img class="welcome__image" src="./images/date_welcome.png" />
+        <img class="welcome__image" src="./images/date_welcome.png" alt="A drawing of a loving couple" />
       </section>
       <section class="spinner">
         <button class="button spinner__button">Raffle my Date Idea</button>
@@ -45,32 +35,11 @@
           <h2 class="modal__name"></h2>
           <p class="modal__description"></p>
           <img src=" " alt="" class="modal__image" />
-          <a class="link" id="google-it" href="" target="_blank"><button type="button" name="google-it" class="button modal__google">Google It</button></a>
-          <!-- <button type="button" name="share" class="button modal__share-button modal__share-button_type_share"></button>
-          <ul class="modal__share-list">
-            <li class="modal__share-item">
-              <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="whatsapp share button" class="modal__share-icon" /></button>
-            </li>
-            <li class="modal__share-item">
-              <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="email share button" class="modal__share-icon" /></button>
-            </li>
-            <li class="modal__share-item">
-              <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="link share button" class="modal__share-icon" /></button>
-            </li>
-          </ul> -->
+          <a class="link button modal__google" id="google-it" href="" target="_blank">Google It</a>
         </div>
       </section>
     </main>
     <footer class="footer">&copy; 2022 Avi Dalal, David Kaplan, Israel Berko</footer>
-    <template id="date-template">
-      <li class="dates__date">
-        <img src=" " alt=" " class="dates__image" />
-        <div class="dates__rectangle">
-          <h2 class="dates__text"></h2>
-        </div>
-      </li>
-    </template>
+    <script src="./pages/index.js" type="module" async></script>
   </body>
-
-  <script src="./pages/index.js" type="module" async></script>
 </html>
