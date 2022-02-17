@@ -67,7 +67,7 @@ export default class RandomDates {
     });
 
     modalCloseButton.addEventListener("click", () => {
-      closeModal(popup);
+      closeModal();
     });
 
     modal.addEventListener("click", (e) => {
