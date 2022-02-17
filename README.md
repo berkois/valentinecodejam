@@ -19,10 +19,10 @@ https://berkois.github.io/valentinecodejam
 
 ### Contact Us
 
-Avi Dalal | xxxxxx@xxx.xx | xxxx
+Avi Dalal | avi413@gmail.com
 
-David Kaplan | xxxxxx@xxx.xx | xxxx
+David Kaplan | kplndvd@gmail.com
 
-Israel Berko | berkois@gmail.com | www.linkedin.com/in/israelberko
+Israel Berko | berkois@gmail.com
 
 ###### [back to top](#top)
