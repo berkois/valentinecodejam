@@ -11,11 +11,11 @@
 @import url(../blocks/welcome/welcome.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/spinner/spinner.css);
-@import url(../blocks/dates/dates.css);
 @import url(../blocks/rotate/rotate.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/modal/modal.css);
 @import url(../blocks/popup/popup.css);
+@import url(../blocks/link/link.css);
 /* blocks */
 
 /* elements */
@@ -24,14 +24,17 @@
 @import url(../blocks/welcome/__image/welcome__image.css);
 @import url(../blocks/welcome/__description/welcome__description.css);
 @import url(../blocks/spinner/__button/spinner__button.css);
-@import url(../blocks/dates/__items-container/dates__items-container.css);
-@import url(../blocks/dates/__item/dates__item.css);
-@import url(../blocks/dates/__item-text/dates__item-text.css);
-@import url(../blocks/dates/__mask/dates__mask.css);
+@import url(../blocks/spinner/__frame/spinner__frame.css);
+@import url(../blocks/spinner/__text/spinner__text.css);
+@import url(../blocks/spinner/__item/spinner__item.css);
+@import url(../blocks/spinner/__items-container/spinner__items-container.css);
+@import url(../blocks/spinner/__mask/spinner__mask.css);
 @import url(../blocks/modal/__container/modal__container.css);
-@import url(../blocks/dates/__item-img/dates__item-img.css);
+@import url(../blocks/modal/__close-icon/modal__close-icon.css);
 @import url(../blocks/modal/__image/modal__image.css);
 @import url(../blocks/modal/__name/modal__name.css);
+@import url(../blocks/modal/__description/modal__description.css);
+@import url(../blocks/modal/__google/modal__google.css);
 @import url(../blocks/modal/__share-button/modal__share-button.css);
 @import url(../blocks/modal/__share-icon/modal__share-icon.css);
 @import url(../blocks/modal/__share-item/modal__share-item.css);
@@ -45,6 +48,4 @@
 /* elements */
 
 /* modifiers */
-@import url(../blocks/popup/_active/popup_active.css);
-
 /* modifiers */

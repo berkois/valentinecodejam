@@ -10,7 +10,7 @@
     <title>Valentine Dating Ideas Board</title>
   </head>
   <body class="page">
-    <div class="popup" id="imagePopUp">
+    <!-- <div class="popup" id="imagePopUp">
       <div class="popup__window popup__window_imagePopUp">
         <button class="popup__exit-btn" type="reset" aria-label="">
           <img class="popup__exit-icon" src="images/exit_icon.png" alt="exit icon button" />
@@ -18,7 +18,7 @@
         <img src=" " class="popup__imagePopUp" alt=" " />
         <p class="popup__imagePopUp-text"></p>
       </div>
-    </div>
+    </div> -->
 
     <div class="page__background"></div>
     <header class="header">
@@ -33,18 +33,20 @@
       </section>
       <section class="spinner">
         <button class="button spinner__button">Raffle my Date Idea</button>
-
-        <div class="dates">
-          <div class="dates__mask" id="wordbox">
-            <ul class="dates__items-container"></ul>
+        <div class="spinner__frame">
+          <div class="spinner__mask" id="wordbox">
+            <ul class="spinner__items-container"></ul>
           </div>
         </div>
       </section>
       <section class="modal">
         <div class="modal__container">
+          <img class="modal__close-icon" src="./images/close_icon.png" alt="exit icon button" />
           <h2 class="modal__name"></h2>
+          <p class="modal__description"></p>
           <img src=" " alt="" class="modal__image" />
-          <button type="button" name="share" class="button modal__share-button"></button>
+          <a class="link" id="google-it" href="" target="_blank"><button type="button" name="google-it" class="button modal__google">Google It</button></a>
+          <!-- <button type="button" name="share" class="button modal__share-button modal__share-button_type_share"></button>
           <ul class="modal__share-list">
             <li class="modal__share-item">
               <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="whatsapp share button" class="modal__share-icon" /></button>
@@ -55,7 +57,7 @@
             <li class="modal__share-item">
               <button type="button" name="whatsapp" class="button modal__share-link"><img src="" alt="link share button" class="modal__share-icon" /></button>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
@@ -70,5 +72,5 @@
     </template>
   </body>
 
-  <script src="./scripts/index.js" type="module" async></script>
+  <script src="./pages/index.js" type="module" async></script>
 </html>
