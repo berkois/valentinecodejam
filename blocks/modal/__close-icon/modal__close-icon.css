@@ -3,4 +3,5 @@
   height: 30px;
   border-radius: 10%;
   cursor: pointer;
+  align-self: flex-end;
 }
