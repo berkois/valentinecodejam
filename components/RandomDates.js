@@ -49,12 +49,7 @@ export default class RandomDates {
     this._button.addEventListener("click", () => {
       if (!this._button.classList.contains("button__start")) {
         this._startNewInterval();
-       // this._button.textContent = "Stop";
-      }/* else {
-        this._stopInterval();
-        this._button.textContent = "Try Another Date";
       }
-      this._button.classList.toggle("button__start");*/
     });
     
 
@@ -99,12 +94,7 @@ export default class RandomDates {
     const randIndex = (Math.random() * max) | 0;
     return randIndex > 10 ? randIndex : this._randomIndex(max);
   }
-/*
-  _stopInterval() {
-    this._wordbox.classList.remove("rotate");
-    clearInterval(this._timer1);
-  }
-*/
+
   _startNewInterval() {
     this._wordbox.classList.add("rotate");
     const timer1 = setInterval(() =>{this._animate()}, 500);
