@@ -15,12 +15,14 @@ The project is built using the following technologies:
 - [JavaScript](https://www.javascript.com)
 - [Figma](https://www.figma.com/)
 
-//https://berkois.github.io/valentinecodejam
+https://berkois.github.io/valentinecodejam
 
 ### Contact Us
 
 Avi Dalal | xxxxxx@xxx.xx | xxxx
+
 David Kaplan | xxxxxx@xxx.xx | xxxx
+
 Israel Berko | berkois@gmail.com | www.linkedin.com/in/israelberko
 
 ###### [back to top](#top)
