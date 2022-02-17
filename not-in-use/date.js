@@ -15,18 +15,10 @@ export default class Date {
 
   generatedate() {
     this._date = this._getTemplate();
-    // this._setEventListeners();
+    
     this._date.querySelector(".dates__image").src = this._image;
     this._date.querySelector(".dates__text").textContent = this._text;
     this._date.querySelector(".dates__image").alt = `${this._text}`;
     return this._date;
   }
-
-  // _setEventListeners() {
-  //   const imagedate = this._date.querySelector(".dates__image");
-
-  //   imagedate.addEventListener("click", () => {
-  //     this._handleImagePopup();
-  //   });
-  // }
 }

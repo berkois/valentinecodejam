@@ -1,5 +1,5 @@
 .modal {
-  visibility: hidden;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,5 @@
 
 .modal_active {
   display: flex;
-  visibility: visible;
   opacity: 1;
 }
